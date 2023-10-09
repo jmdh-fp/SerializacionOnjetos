@@ -8,12 +8,29 @@ public class Empleado implements Serializable {
     private String apellido;
     private String nomina;
     private int edad;
+    private transient String domicilio;  // Este atributo no se serializará
+                                         // Cuando se lea se le asignará su valor por defecto (null en este caso)
 
-    public Empleado(String nombre, String apellido, String nomina, int edad) {
+    public Empleado(String nombre, String apellido, String nomina, int edad, String domicilio) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.nomina = nomina;
         this.edad = edad;
+        this.domicilio = domicilio;
+    }
+
+
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public String getDomicilio() {
+        return domicilio;
+    }
+
+    public void setDomicilio(String domicilio) {
+        this.domicilio = domicilio;
     }
 
     public String getNombre() {

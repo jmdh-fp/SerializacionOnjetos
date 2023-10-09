@@ -10,9 +10,9 @@ public class Main {
     public static void main(String[] args) {
         // Crea lista de empleados
         List<Empleado> listaEmpleados = new  ArrayList<>();
-        listaEmpleados.add(new Empleado("Pepe","Fernandez","78656t",23));
-        listaEmpleados.add(new Empleado("María","Ortíz","7865r",19));
-        listaEmpleados.add(new Empleado("Juan","Sánchez","345-7",43));
+        listaEmpleados.add(new Empleado("Pepe","Fernandez","78656t",23,"C Albeniz"));
+        listaEmpleados.add(new Empleado("María","Ortíz","7865r",19,"Avd. América,23"));
+        listaEmpleados.add(new Empleado("Juan","Sánchez","345-7",43,null));
 
         File fichero = new File("empleados.srz");
 
