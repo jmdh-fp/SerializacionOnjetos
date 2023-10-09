@@ -3,7 +3,7 @@ package org.example.model;
 import java.io.Serializable;
 
 public class Empleado implements Serializable {
-    long serialID = 1L;
+    private static final long serialVersionUID  = 1L;
     private String nombre;
     private String apellido;
     private String nomina;
@@ -51,7 +51,7 @@ public class Empleado implements Serializable {
     @Override
     public String toString() {
         return "Empleado{" +
-                "serialID=" + serialID +
+                "serialID=" + serialVersionUID +
                 ", nombre='" + nombre + '\'' +
                 ", apellido='" + apellido + '\'' +
                 ", nomina='" + nomina + '\'' +
