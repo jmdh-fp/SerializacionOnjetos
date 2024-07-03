@@ -40,13 +40,8 @@ public class Main {
             }
         } catch (EOFException e){
             System.out.println("He llegado al final del fichero");
-        } catch (FileNotFoundException e) {
+        } catch (ClassNotFoundException | IOException e) {
             throw new RuntimeException(e);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        } catch (ClassNotFoundException e) {
-            throw new RuntimeException(e);
-
         }
 
     }
