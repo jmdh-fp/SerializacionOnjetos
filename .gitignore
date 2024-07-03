@@ -36,3 +36,7 @@ build/
 
 ### Mac OS ###
 .DS_Store
+/empleados.srz
+/.idea/encodings.xml
+/pom.xml
+/.idea/uiDesigner.xml
